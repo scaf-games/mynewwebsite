@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Ensure header stays at the top */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Dark Theme Colors */
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: #4CAF50; /* School color */
+}
+
+.logo p {
+  font-size: 0.9rem;
+  color: #999999;
+  margin-top: -8px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #4CAF50; /* Highlight school color */
+}
+
+/* CTA Button Styles */
+.cta .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+  background-color: #388E3C;
+}
+
+/* Hero Section Styles */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('school-background.jpeg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 120px; /* Added to accommodate fixed navbar */
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 30px; /* Add spacing between heading and paragraph */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  margin-bottom: 40px; /* Increased spacing between paragraph and button */
+}
+
+.hero-content .btn {
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background-color: #388E3C;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  .hero-content h2 {
+      font-size: 2.5rem;
+  }
+
+  .hero-content p {
+      font-size: 1rem;
+  }
+}
+
+/* About Us Section */
+.about-us {
+  background-color: #1e1e1e;
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+.about-us .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-us .about-text {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.about-us .about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4CAF50; /* Highlight school color */
+}
+
+.about-us .about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #bbbbbb;
+}
+
+.about-us .about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-us .about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive Adjustments for About Us Section */
+@media (max-width: 768px) {
+  .about-us .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-us .about-text {
+      margin-right: 0;
+      margin-bottom: 40px;
+  }
+
+  .about-us .about-image img {
+      width: 80%;
+  }
+}
